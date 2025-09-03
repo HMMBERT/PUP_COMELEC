@@ -2,13 +2,8 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 
-export async function GET(
-  req: Request,
-  { params }: { params: { file: string } }
-) {
-  const fileName = params.file;
-
-  // Path to your private docs folder
+export async function GET(req: Request) {
+  const fileName = "your-default.pdf"; // hardcoded or from query string
   const filePath = path.join(process.cwd(), "Temp/app/api/hello/docs", fileName);
 
   if (!fs.existsSync(filePath)) {
@@ -21,7 +16,7 @@ export async function GET(
     status: 200,
     headers: {
       "Content-Type": "application/pdf",
-      "Content-Disposition": "inline", // prevents forced download
+      "Content-Disposition": "inline",
     },
   });
 }
