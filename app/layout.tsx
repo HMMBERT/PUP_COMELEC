@@ -39,7 +39,7 @@ const nacelle = localFont({
 });
 
 export const metadata = {
-  title: "PUP comelec.",
+  title: "PUP COMELEC",
   description: "PUP Manila Comission on Elections",
 };
 
