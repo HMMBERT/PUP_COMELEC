@@ -1,44 +1,19 @@
+// src/app/archive/page.tsx
+
 "use client";
 
 import { useState, lazy, Suspense } from "react";
 import { FileText, Book, Gavel } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Footer from "@/components/ui/footer"; // <-- Footer component imported
+import Footer from "@/components/ui/footer";
 
-// Dynamically import the PDFViewer component
+// --- Type and Data Imports ---
+import type { Document, ArchiveSectionProps } from "./types";
+import { documentsData } from "./data";
+
+// --- Dynamic Component Import ---
 const PDFViewer = lazy(() => import("@/components/PDFViewer"));
-
-// --- Mock Data ---
-const documentsData = {
-  memorandums: [
-    { title: "Memorandum 2024-001: General Election Guidelines", link: "/docs/memo-2024-001.pdf" },
-    { title: "Memorandum 2024-002: Candidate Registration", link: "/docs/memo-2024-002.pdf" },
-    { title: "Memorandum 2021-005: Logistics", link: "/docs/memo-2021-005.pdf" },
-  ],
-  resolutions: [
-    { title: "Resolution No. 2023-A: On Election Calendar", link: "/docs/res-2023-a.pdf" },
-    { title: "Resolution No. 2021-B: Campaign Guidelines", link: "/docs/res-2021-b.pdf" },
-  ],
-  petitions: [
-    { title: "Petition Case 045 (2021): Sample Petition", link: "/docs/pet-045.pdf" },
-    { title: "Decision on Case 001 (2024): Disqualification", link: "/docs/dec-001.pdf" },
-  ],
-};
-
-// --- Types ---
-type Document = {
-  title: string;
-  link: string;
-};
-
-interface ArchiveSectionProps {
-  icon: React.ElementType;
-  title: string;
-  description: string;
-  documents: Document[];
-  onFileSelect: (file: Document) => void;
-}
 
 /**
  * A component representing a single section of the archive (e.g., Memorandums).
@@ -52,7 +27,7 @@ const ArchiveSection: React.FC<ArchiveSectionProps> = ({
 }) => {
   const [selectedYear, setSelectedYear] = useState<string>("All");
 
-  // Extract years dynamically
+  // Extract years dynamically from document titles
   const years = Array.from(
     new Set(
       documents
@@ -62,7 +37,7 @@ const ArchiveSection: React.FC<ArchiveSectionProps> = ({
         })
         .filter((year) => year !== "")
     )
-  ).sort((a, b) => Number(b) - Number(a));
+  ).sort((a, b) => Number(b) - Number(a)); // Sort descending
 
   const filteredDocs =
     selectedYear === "All"
@@ -108,7 +83,7 @@ const ArchiveSection: React.FC<ArchiveSectionProps> = ({
         )}
       </div>
 
-      {/* Documents */}
+      {/* Documents List */}
       <ul className="p-6 grid grid-cols-1 sm:grid-cols-2 gap-4 relative z-10">
         {filteredDocs.length > 0 ? (
           filteredDocs.map((doc, index) => (
@@ -141,7 +116,7 @@ const ArchiveSection: React.FC<ArchiveSectionProps> = ({
 };
 
 /**
- * Main Page
+ * The main page component for the Document Archive.
  */
 export default function DocumentArchivePage() {
   const [selectedDoc, setSelectedDoc] = useState<Document | null>(null);
@@ -154,6 +129,7 @@ export default function DocumentArchivePage() {
         alt=""
         width={1200}
         height={1200}
+        aria-hidden="true"
         className="absolute top-0 left-1/2 -translate-x-1/2 opacity-20 pointer-events-none"
       />
       <Image
@@ -161,10 +137,11 @@ export default function DocumentArchivePage() {
         alt=""
         width={1200}
         height={1200}
+        aria-hidden="true"
         className="absolute bottom-0 left-1/2 -translate-x-1/2 opacity-20 pointer-events-none"
       />
 
-      <div className="relative z-10 mx-auto w-full max-w-7xl flex-grow px-4 py-20 sm:px-6 md:py-28">
+      <main className="relative z-10 mx-auto w-full max-w-7xl flex-grow px-4 py-20 sm:px-6 md:py-28">
         {/* Page Header */}
         <motion.div
           className="mx-auto max-w-4xl pb-16 text-center"
@@ -204,7 +181,7 @@ export default function DocumentArchivePage() {
             onFileSelect={setSelectedDoc}
           />
         </div>
-      </div>
+      </main>
 
       {/* PDF Modal Loader */}
       {selectedDoc && (
@@ -226,7 +203,6 @@ export default function DocumentArchivePage() {
         </Suspense>
       )}
       
-      {/* Footer component rendered here */}
       <Footer />
     </div>
   );
