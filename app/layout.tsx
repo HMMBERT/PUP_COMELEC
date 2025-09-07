@@ -41,6 +41,9 @@ const nacelle = localFont({
 export const metadata = {
   title: "PUP COMELEC",
   description: "PUP Manila Comission on Elections",
+  icons: {
+    icon: "/images/logo.ico", 
+  },
 };
 
 export default function RootLayout({

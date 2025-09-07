@@ -1,6 +1,9 @@
 export const metadata = {
   title: "Home - PUP COMELEC",
   description: "Page description",
+  icons: {
+    icon: "/images/logo.ico", 
+  },
 };
 
 import PageIllustration from "@/components/page-illustration";
