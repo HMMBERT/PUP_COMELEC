@@ -24,14 +24,7 @@ export default function Header() {
                   Home
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/about"
-                  className="btn-sm py-[5px] text-gray-300 hover:text-white"
-                >
-                  About
-                </Link>
-              </li>
+              
               <li>
                 <Link
                   href="/members"

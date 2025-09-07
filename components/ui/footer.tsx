@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "./logo";
-import FooterIllustration from "@/public/images/footer-illustration.svg";
+
 import { Facebook, Twitter, Instagram, Mail, MapPin } from "lucide-react";
 
 export default function Footer() {
@@ -13,13 +13,7 @@ export default function Footer() {
           className="pointer-events-none absolute bottom-0 left-1/2 -z-10 -translate-x-1/2"
           aria-hidden="true"
         >
-          <Image
-            className="max-w-none"
-            src={FooterIllustration}
-            width={1076}
-            height={378}
-            alt="Footer illustration"
-          />
+          
         </div>
 
 <div className="grid grid-cols-2 justify-between gap-4 py-8 sm:grid-rows-[auto_auto] md:grid-cols-4 md:grid-rows-[auto_auto] md:py-12 lg:grid-cols-5 lg:grid-rows-1 xl:gap-6">
