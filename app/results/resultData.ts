@@ -171,19 +171,19 @@ export const resultsData: {
     "College of Human Kinetics": {
       President: [
         { name: "No Official Candidate", position: "President", votes: "No votes yet" 
-           ,photo: "public/images/Candidates/CHK/No Candidate.png" 
+           ,photo: "/images/Candidates/CHK/No Candidate.png" 
         },
         
       ],
       VicePresident: [
         { name: "No Official Candidate", position: "Vice President", votes: "No votes yet"
-           ,photo: "public/images/Candidates/CHK/No Candidate.png" 
+           ,photo: "/images/Candidates/CHK/No Candidate 1.png" 
          },
     
       ],
        Councilors: [
       { name: "No Official Candidate", position: "Councilor", votes: "No votes yet" 
-         ,photo: "public/images/Candidates/CHK/No Candidate.png" 
+         ,photo: "/images/Candidates/CHK/No Candidate 2.png" 
       },
    
        ]
@@ -532,26 +532,26 @@ export const resultsData: {
 
     "Institute of Technology": {President: [
         { name: "Nicolas John Ivan", position: "President", votes: "No votes yet" 
-          ,photo: "public/images/Candidates/ITECH/Pres 1.jpg"
+          ,photo: "/images/Candidates/ITECH/Pres 1.jpg"
         },
       ],
       VicePresident: [
         { name: "Gragasin Gio ", position: "Vice President", votes: "No votes yet" 
-           ,photo: "public/images/Candidates/ITECH/VP 1.jpg"
+           ,photo: "/images/Candidates/ITECH/VP 1.jpg"
         },
       ],
      Councilors: [
       { name: "Cayabyab JD", position: "Councilor", votes: "No votes yet"
-         ,photo: "public/images/Candidates/ITECH/Con 1.jpg"
+         ,photo: "/images/Candidates/ITECH/Con 1.png"
        },
     { name: "Carpentes Ash", position: "Councilor", votes: "No votes yet" 
-       ,photo: "public/images/Candidates/ITECH/Con 2.jpg"
+       ,photo: "/images/Candidates/ITECH/Con 2.jpg"
     },
   { name: "Clemente Joseph “seph”", position: "Councilor", votes: "No votes yet" 
-     ,photo: "public/images/Candidates/ITECH/Con 3.jpg"
+     ,photo: "/images/Candidates/ITECH/Con 3.jpg"
   },
     { name: "Gepiga Mhelo", position: "Councilor", votes: "No votes yet" 
-       ,photo: "public/images/Candidates/ITECH/Con 4.jpg"
+       ,photo: "/images/Candidates/ITECH/Con 4.jpg"
     },
   
   ]
