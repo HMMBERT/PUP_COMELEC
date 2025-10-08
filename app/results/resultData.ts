@@ -170,15 +170,21 @@ export const resultsData: {
   
     "College of Human Kinetics": {
       President: [
-        { name: "Placeholder Candidate 1", position: "President", votes: "No votes yet" },
-        { name: "Placeholder Candidate 2", position: "President", votes: "No votes yet" },
+        { name: "No Official Candidate", position: "President", votes: "No votes yet" 
+           ,photo: "public/images/Candidates/CHK/No Candidate.png" 
+        },
+        
       ],
       VicePresident: [
-        { name: "Placeholder Candidate 1", position: "Vice President", votes: "No votes yet" },
-        { name: "Placeholder Candidate 2", position: "Vice President", votes: "No votes yet" },
+        { name: "No Official Candidate", position: "Vice President", votes: "No votes yet"
+           ,photo: "public/images/Candidates/CHK/No Candidate.png" 
+         },
+    
       ],
        Councilors: [
-      { name: "Placeholder Candidate 1", position: "Councilor", votes: "No votes yet" },
+      { name: "No Official Candidate", position: "Councilor", votes: "No votes yet" 
+         ,photo: "public/images/Candidates/CHK/No Candidate.png" 
+      },
    
        ]
     },
@@ -227,7 +233,7 @@ export const resultsData: {
 
     "College of Architecture, Design and the Built Environment": { President: [
         { name: "Agustin Janina", position: "President", votes: "No votes yet"
-          ,photo: "/images/Candidates/CADBE/Con 1.jpg" 
+          ,photo: "/images/Candidates/CADBE/Pres 1.jpg" 
          },
        
       ],
