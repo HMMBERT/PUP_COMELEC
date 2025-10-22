@@ -41,10 +41,10 @@ export default function HeroHome() {
               >
                 <Link
                   className="btn group mb-4 w-full rounded-lg bg-gradient-to-r from-blue-600 to-sky-500 text-white shadow-lg shadow-blue-500/20 transition-all duration-300 hover:from-blue-500 hover:to-sky-400 sm:mb-0 sm:w-auto"
-                  href="/results"
+                  href="/vote"
                 >
                   <span className="relative inline-flex items-center px-5 py-2.5">
-                    View Official Results
+                    Cast my Vote
                     <span className="ml-1 tracking-normal text-sky-300 transition-transform group-hover:translate-x-0.5">
                       -&gt;
                     </span>
@@ -52,11 +52,10 @@ export default function HeroHome() {
                 </Link>
                 <Link
                   className="btn group w-full rounded-lg border border-slate-700 bg-slate-800/50 text-slate-300 shadow-lg shadow-slate-900/20 transition-all duration-300 hover:border-slate-600 hover:bg-slate-800 sm:ml-4 sm:w-auto"
-                  href="/about"
+                  href="/results"
                 >
                   <span className="relative inline-flex items-center px-5 py-2.5">
-                    Learn More
-                  </span>
+View Official Result                  </span>
                 </Link>
               </div>
             </div>

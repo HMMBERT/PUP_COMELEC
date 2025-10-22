@@ -15,7 +15,6 @@ export type CollegeResults = {
   Councilors: Candidate[];
 };
 
-// --- Mock Data ---
 export const resultsData: {
   skm: CollegeResults;
   colleges: Record<string, CollegeResults>;
