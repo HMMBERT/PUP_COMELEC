@@ -24,22 +24,15 @@ export interface MemberData {
 export const membersByYear: { [key: string]: MemberData } = {
   2025: {
     commissioners: [
-      { name: "MARQUEZ, KRISTAL ANDREA", title: "Chairperson", college: "College of Human Kinetics" },
-      { name: "ROLUSTA, PAUL JANRY", title: "Vice Chairperson", college: "College of Social Sciences and Development" },
-      { name: "JUANSON, RHOANNE ALESIE", title: "Secretary-General", college: "College of Science" },
-      { name: "BARTOLATA, MARK DAVID", title: "Treasurer", college: "College of Political Science and Public Administration" },
+      // --- COLLEGE COMMISSIONERS ---
       { name: "ANICIETE, JAMES BENEDICT", title: "Commissioner", college: "College of Arts and Letters" },
       { name: "LINTAG, GENER AUGUST", title: "Commissioner", college: "College of Education" },
-      { name: "MARQUEZ, KRISTAL ANDREA", title: "Commissioner", college: "College of Human Kinetics" },
       { name: "CABRAL, NICOLE", title: "Commissioner", college: "College of Business Administration" },
       { name: "SORIANO, REIN ALYSSA", title: "Commissioner", college: "College of Engineering" },
       { name: "BOGNOT, KC", title: "Commissioner", college: "College of Computer and Information Sciences" },
       { name: "PRIETO, ABIGAIL", title: "Commissioner", college: "College of Communication" },
       { name: "MANALO, KATRIA", title: "Commissioner", college: "College of Accountancy and Finance" },
       { name: "MANABAT, JERWIN", title: "Commissioner", college: "College of Architecture, Design, and the Built Environment" },
-      { name: "JUANSON, RHOANNE ALESIE", title: "Commissioner", college: "College of Science" },
-      { name: "BARTOLATA, MARK DAVID", title: "Commissioner", college: "College of Political Science and Public Administration" },
-      { name: "ROLUSTA, PAUL JANRY", title: "Commissioner", college: "College of Social Sciences and Development" },
       { name: "PUDOL, VICTOR JHON", title: "Commissioner", college: "College of Tourism, Hospitality, and Transportation Management" },
       { name: "REBANCOS, JOHN ALBERT", title: "Commissioner", college: "Institute of Technology" },
       { name: "RAMEL, LACHERRY BE. MAY-ANNE", title: "Commissioner", college: "Open University System" },
@@ -118,7 +111,7 @@ export const membersByYear: { [key: string]: MemberData } = {
     ],
     deputies: [
       { name: "Yuki Mei L. Carlos", college: "College of Architecture, Design and the Built Environment" },
-      { name: "Kyle P. Balisi", college: "College of Accountancy andFinance" },
+      { name: "Kyle P. Balisi", college: "College of Accountancy and Finance" },
       { name: "James Benedict G. Aniciete", college: "College of Arts and Letters" },
       { name: "Rachelyn F. Esteva", college: "College of Business Administration" },
       { name: "Kristina Cassandra D. Bognot", college: "College of Computer and Information Sciences" },
