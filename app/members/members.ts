@@ -92,10 +92,10 @@ export const membersByYear: { [key: string]: MemberData } = {
   },
   2024: {
     commissioners: [
-      { name: "GAD THOMAS DEUEL S. MENDIOLA", title: "Chairperson", college: "College of Arts and Letters" },
-      { name: "MARVIE ANGELINE B. DAPO", title: "Vice Chairperson", college: "College of Political Science and Public Administration" },
-      { name: "KRISTAL ANDREA M. MARQUEZ", title: "Secretary-General", college: "College of Human Kinetics" },
-      { name: "MELWEL ARCEL C. GORUMBA", title: "Treasurer", college: "College of Accountancy and Finance" },
+      { name: "GAD THOMAS DEUEL S. MENDIOLA", title: "Commissioner", college: "College of Arts and Letters" },
+      { name: "MARVIE ANGELINE B. DAPO", title: "Commissioner", college: "College of Political Science and Public Administration" },
+      { name: "KRISTAL ANDREA M. MARQUEZ", title: "Commissioner", college: "College of Human Kinetics" },
+      { name: "MELWEL ARCEL C. GORUMBA", title: "Commissioner", college: "College of Accountancy and Finance" },
       { name: "JERWIN P. MANABAT", title: "Commissioner", college: "College of Architecture, Design and the Built Environment" },
       { name: "NICOLE A. CABRAL", title: "Commissioner", college: "College of Business Administration" },
       { name: "LUKE MARK P. LEONA", title: "Commissioner", college: "College of Computer and Information Sciences" },
@@ -164,10 +164,10 @@ export const membersByYear: { [key: string]: MemberData } = {
   },
   2023: {
     commissioners: [
-      { name: "GAD THOMAS DEUEL S. MENDIOLA", title: "Chairperson", college: "College of Arts and Letters" },
-      { name: "LORIELYN Y. BELMONTE", title: "Vice Chairperson", college: "College of Communication" },
-      { name: "MELWEL ARCEL C. GORUMBA", title: "Secretary-General", college: "College of Accountancy and Finance" },
-      { name: "ANNA KATRINA C. TENA", title: "Treasurer", college: "College of Political Science and Public Administration" },
+      { name: "GAD THOMAS DEUEL S. MENDIOLA", title: "Commissioner", college: "College of Arts and Letters" },
+      { name: "LORIELYN Y. BELMONTE", title: "Commissioner", college: "College of Communication" },
+      { name: "MELWEL ARCEL C. GORUMBA", title: "Commissioner", college: "College of Accountancy and Finance" },
+      { name: "ANNA KATRINA C. TENA", title: "Commissioner", college: "College of Political Science and Public Administration" },
       { name: "PIOLO MIGUEL A. BARCELONA", title: "Commissioner", college: "College of Architecture, Design and the Built Environment" },
       { name: "ADAM JESS C. DE GUZMAN", title: "Commissioner", college: "College of Business Administration" },
       { name: "LUKE MARK P. LEONA", title: "Commissioner", college: "College of Computer and Information Sciences" },
@@ -221,10 +221,10 @@ export const membersByYear: { [key: string]: MemberData } = {
 
   2022: {
     commissioners: [
-        { name: "RJ O. SALAMERA", title: "Chairperson", college: "College of Political Science and Public Administration" },
-        { name: "GAD THOMAS DEUEL S. MENDIOLA", title: "Vice Chairperson", college: "College of Arts and Letters" },
-        { name: "MARY JOY B. DAGDAG", title: "Secretary-General", college: "College of Science" },
-        { name: "ANN SHIRLEY M. BENITEZ", title: "Treasurer", college: "College of Education" },
+        { name: "RJ O. SALAMERA", title: "Commissioner", college: "College of Political Science and Public Administration" },
+        { name: "GAD THOMAS DEUEL S. MENDIOLA", title: "Commissioner", college: "College of Arts and Letters" },
+        { name: "MARY JOY B. DAGDAG", title: "Commissioner", college: "College of Science" },
+        { name: "ANN SHIRLEY M. BENITEZ", title: "Commissioner", college: "College of Education" },
         { name: "MARL NICO MARI M. DE VERA", title: "Commissioner", college: "College of Accountancy and Finance" },
         { name: "APPLE JOY A. BUEN", title: "Commissioner", college: "College of Architecture, Design and Built Environment" },
         { name: "JOYCE MARIE L. TOLENTINO", title: "Commissioner", college: "College of Business Administration" },
@@ -253,10 +253,10 @@ export const membersByYear: { [key: string]: MemberData } = {
   },
   2021: {
     commissioners: [
-        { name: "JANNETTE PRINCESS V. HINATE", title: "Chairperson", college: "College of Education" },
-        { name: "JANEL MARIEKE B. BANARIA", title: "Vice Chairperson", college: "College of Social Science and Development" },
-        { name: "ALEC MARIZ G. AVERILLA", title: "Secretary General", college: "College of Human Kinetics" },
-        { name: "KATHERINE CLAIRE A. HOANG", title: "Treasurer", college: "College of Architecture, Design and Built Environment" },
+        { name: "JANNETTE PRINCESS V. HINATE", title: "Commissioner", college: "College of Education" },
+        { name: "JANEL MARIEKE B. BANARIA", title: "Commissioner", college: "College of Social Science and Development" },
+        { name: "ALEC MARIZ G. AVERILLA", title: "Commissioner", college: "College of Human Kinetics" },
+        { name: "KATHERINE CLAIRE A. HOANG", title: "Commissioner", college: "College of Architecture, Design and Built Environment" },
         { name: "DIVINA MARIE B. IBAÑEZ", title: "Commissioner", college: "College of Arts and Letters" },
         { name: "ANGELA LUISA H. MONTENEGRO", title: "Commissioner", college: "College of Accountancy and Finance" },
         { name: "ELIZABETH MARIE G. ANDAYA", title: "Commissioner", college: "College of Business Administration" },
