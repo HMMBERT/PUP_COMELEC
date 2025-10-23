@@ -1,4 +1,3 @@
-
 // --- Type Definitions for our Data ---
 export interface Commissioner {
   name: string;
@@ -23,134 +22,209 @@ export interface MemberData {
 
 // --- Data extracted and structured from your .docx files ---
 export const membersByYear: { [key: string]: MemberData } = {
+  2025: {
+    commissioners: [
+      { name: "MARQUEZ, KRISTAL ANDREA", title: "Chairperson", college: "College of Human Kinetics" },
+      { name: "ROLUSTA, PAUL JANRY", title: "Vice Chairperson", college: "College of Social Sciences and Development" },
+      { name: "JUANSON, RHOANNE ALESIE", title: "Secretary-General", college: "College of Science" },
+      { name: "BARTOLATA, MARK DAVID", title: "Treasurer", college: "College of Political Science and Public Administration" },
+      { name: "ANICIETE, JAMES BENEDICT", title: "Commissioner", college: "College of Arts and Letters" },
+      { name: "LINTAG, GENER AUGUST", title: "Commissioner", college: "College of Education" },
+      { name: "MARQUEZ, KRISTAL ANDREA", title: "Commissioner", college: "College of Human Kinetics" },
+      { name: "CABRAL, NICOLE", title: "Commissioner", college: "College of Business Administration" },
+      { name: "SORIANO, REIN ALYSSA", title: "Commissioner", college: "College of Engineering" },
+      { name: "BOGNOT, KC", title: "Commissioner", college: "College of Computer and Information Sciences" },
+      { name: "PRIETO, ABIGAIL", title: "Commissioner", college: "College of Communication" },
+      { name: "MANALO, KATRIA", title: "Commissioner", college: "College of Accountancy and Finance" },
+      { name: "MANABAT, JERWIN", title: "Commissioner", college: "College of Architecture, Design, and the Built Environment" },
+      { name: "JUANSON, RHOANNE ALESIE", title: "Commissioner", college: "College of Science" },
+      { name: "BARTOLATA, MARK DAVID", title: "Commissioner", college: "College of Political Science and Public Administration" },
+      { name: "ROLUSTA, PAUL JANRY", title: "Commissioner", college: "College of Social Sciences and Development" },
+      { name: "PUDOL, VICTOR JHON", title: "Commissioner", college: "College of Tourism, Hospitality, and Transportation Management" },
+      { name: "REBANCOS, JOHN ALBERT", title: "Commissioner", college: "Institute of Technology" },
+      { name: "RAMEL, LACHERRY BE. MAY-ANNE", title: "Commissioner", college: "Open University System" },
+    ],
+    deputies: [
+      { name: "DEL ROSARIO, COLIN", college: "College of Communication" },
+      { name: "FOJAS, RYZZA MAE", college: "College of Communication" },
+      { name: "CARLOS, YUKI MEI", college: "College of Architecture, Design, and the Built Environment" },
+      { name: "ALPUERTO, JELAINE", college: "College of Architecture, Design, and the Built Environment" },
+      { name: "DIAZ, STEPHANIE", college: "College of Education" },
+      { name: "HEMBRADOR, MARK RHEYNELL", college: "College of Education" },
+      { name: "VILLALUZ, KEN CEDRICK", college: "College of Human Kinetics" },
+      { name: "PERIDA, CARLOS JOSE", college: "College of Arts and Letters" },
+      { name: "ARIZALA, HARLLIEQUINE", college: "College of Arts and Letters" },
+      { name: "RELATOR, MARY RUTH", college: "College of Engineering" },
+      { name: "ESTEVA, RACHELYN", college: "College of Business Administration" },
+      { name: "DAGSA, CELIA", college: "College of Business Administration" },
+      { name: "BOBILES, NERIAH PHOEBE", college: "College of Computer and Information Sciences" },
+      { name: "DALIDA, LUCY JOY", college: "College of Accountancy and Finance" },
+      { name: "NUCUM, ELAIZABETH", college: "College of Accountancy and Finance" },
+      { name: "HERNANDEZ, JAMIE", college: "College of Science" },
+      { name: "FUENTES, SHERLYN", college: "College of Science" },
+      { name: "MORAN, MA. VICTORIA MAXIME", college: "College of Political Science and Public Administration" },
+      { name: "VILLASIS, IVAN JAE", college: "College of Political Science and Public Administration" },
+      { name: "DOMINGO, CZANTLE", college: "Open University System" },
+      { name: "ANIOG, MARY DAWN JHOANA", college: "College of Social Sciences and Development" },
+      { name: "ROQUE, MA. SAMANTHA FAYE", college: "College of Social Sciences and Development" },
+      { name: "HEPOLAN, ROSEANN", college: "College of Tourism, Hospitality, and Transportation Management" },
+      { name: "LUCBAN, MIA RIZZI", college: "Institute of Technology" },
+    ],
+    staff: {
+      "Executive Committee": [
+        "Mira Nicole Libao"
+      ],
+      "Secretariat Committee": [
+        "Juliana Marie Baximen",
+        "Jilliane Jaye Maliksi",
+        "Maria Kathlyn Quirante"
+      ],
+      "Audit and Finance Committee": [
+        "Kimberly Joyce Tatel",
+        "Kathleen Grace Racelis"
+      ],
+      "Publications and Multimedia Committee": [
+        "Gracielle Batalla",
+        "Juliana Pisuena",
+        "Ann Lorenze Faustino"
+      ],
+      "Programs and Events Committee": [
+        "Nathaniel Lacandola",
+        "Elijah Lyn Sevilla",
+        "Sonny Boy Ligutom",
+        "Sonny Barolo",
+        "Chocko Ramel"
+      ]
+    }
+  },
   2024: {
-  commissioners: [
-    { name: "GAD THOMAS DEUEL S. MENDIOLA", title: "Chairperson", college: "College of Arts and Letters" },
-    { name: "MARVIE ANGELINE B. DAPO", title: "Vice Chairperson", college: "College of Political Science and Public Administration" },
-    { name: "KRISTAL ANDREA M. MARQUEZ", title: "Secretary-General", college: "College of Human Kinetics" },
-    { name: "MELWEL ARCEL C. GORUMBA", title: "Treasurer", college: "College of Accountancy and Finance" },
-    { name: "JERWIN P. MANABAT", title: "Commissioner", college: "College of Architecture, Design and the Built Environment" },
-    { name: "NICOLE A. CABRAL", title: "Commissioner", college: "College of Business Administration" },
-    { name: "LUKE MARK P. LEONA", title: "Commissioner", college: "College of Computer and Information Sciences" },
-    { name: "CARLOS JAIRO L. TIAGA", title: "Commissioner", college: "College of Engineering" },
-    { name: "GABRIEL R. GONZALES", title: "Commissioner", college: "College of Communication" },
-    { name: "ABIGAIL P. PRIETO", title: "Commissioner", college: "College of Communication" },
-    { name: "GENER AUGUST S. LINTAG", title: "Commissioner", college: "College of Education" },
-    { name: "RHOANNE ALESIE S. JUANSON", title: "Commissioner", college: "College of Science" },
-    { name: "PAUL JANRY D. ROLUSTA", title: "Commissioner", college: "College of Social Sciences and Development" },
-    { name: "JUAN MIGUEL G. MORADO", title: "Commissioner", college: "College of Tourism, Hospitality, and Transportation Management" },
-    { name: "John Albert D. Rebancos", title: "Commissioner", college: "Institute of Technology" },
-    { name: "Lacherry Be. May-Anne S. Ramel", title: "Commissioner", college: "Open University System" },
-  ],
-  deputies: [
-    { name: "Yuki Mei L. Carlos", college: "College of Architecture, Design and the Built Environment" },
-    { name: "Kyle P. Balisi", college: "College of Accountancy and Finance" },
-    { name: "James Benedict G. Aniciete", college: "College of Arts and Letters" },
-    { name: "Rachelyn F. Esteva", college: "College of Business Administration" },
-    { name: "Kristina Cassandra D. Bognot", college: "College of Computer and Information Sciences" },
-    { name: "Rein Alyssa G. Soriano", college: "College of Engineering" },
-    { name: "Ken Cedrick Peña Villaluz", college: "College of Human Kinetics" },
-    { name: "Colin S. Del Rosario", college: "College of Communication" },
-    { name: "Divine Bea B. Iringan", college: "College of Education" },
-    { name: "Mark David L. Bartolata", college: "College of Political Science and Public Administration" },
-    { name: "Jamie SG. Hernandez", college: "College of Science" },
-    { name: "Mary Dawn Jhoana E. Laniog", college: "College of Social Sciences and Development" },
-    { name: "Mia Rizzi Lou R. Lucban", college: "Institute of Technology" },
-    { name: "Erika Nicole B. Bermudez", college: "Open University System" },
-  ],
-  staff: {
-    "Publications and Multimedia Committee": [
-      "Harlliequine N. Arizala",
-      "Juliana Dominique A. Pisueña",
-      "Lemuel A. Velasco",
-      "Neriah Phoebe M. Bobiles"
+    commissioners: [
+      { name: "GAD THOMAS DEUEL S. MENDIOLA", title: "Chairperson", college: "College of Arts and Letters" },
+      { name: "MARVIE ANGELINE B. DAPO", title: "Vice Chairperson", college: "College of Political Science and Public Administration" },
+      { name: "KRISTAL ANDREA M. MARQUEZ", title: "Secretary-General", college: "College of Human Kinetics" },
+      { name: "MELWEL ARCEL C. GORUMBA", title: "Treasurer", college: "College of Accountancy and Finance" },
+      { name: "JERWIN P. MANABAT", title: "Commissioner", college: "College of Architecture, Design and the Built Environment" },
+      { name: "NICOLE A. CABRAL", title: "Commissioner", college: "College of Business Administration" },
+      { name: "LUKE MARK P. LEONA", title: "Commissioner", college: "College of Computer and Information Sciences" },
+      { name: "CARLOS JAIRO L. TIAGA", title: "Commissioner", college: "College of Engineering" },
+      { name: "GABRIEL R. GONZALES", title: "Commissioner", college: "College of Communication" },
+      { name: "ABIGAIL P. PRIETO", title: "Commissioner", college: "College of Communication" },
+      { name: "GENER AUGUST S. LINTAG", title: "Commissioner", college: "College of Education" },
+      { name: "RHOANNE ALESIE S. JUANSON", title: "Commissioner", college: "College of Science" },
+      { name: "PAUL JANRY D. ROLUSTA", title: "Commissioner", college: "College of Social Sciences and Development" },
+      { name: "JUAN MIGUEL G. MORADO", title: "Commissioner", college: "College of Tourism, Hospitality, and Transportation Management" },
+      { name: "John Albert D. Rebancos", title: "Commissioner", college: "Institute of Technology" },
+      { name: "Lacherry Be. May-Anne S. Ramel", title: "Commissioner", college: "Open University System" },
     ],
-    "Programs and Events Committee": [
-      "Ma. Samantha Fhay D. Roque",
-      "Colin S. Del Rosario"
+    deputies: [
+      { name: "Yuki Mei L. Carlos", college: "College of Architecture, Design and the Built Environment" },
+      { name: "Kyle P. Balisi", college: "College of Accountancy andFinance" },
+      { name: "James Benedict G. Aniciete", college: "College of Arts and Letters" },
+      { name: "Rachelyn F. Esteva", college: "College of Business Administration" },
+      { name: "Kristina Cassandra D. Bognot", college: "College of Computer and Information Sciences" },
+      { name: "Rein Alyssa G. Soriano", college: "College of Engineering" },
+      { name: "Ken Cedrick Peña Villaluz", college: "College of Human Kinetics" },
+      { name: "Colin S. Del Rosario", college: "College of Communication" },
+      { name: "Divine Bea B. Iringan", college: "College of Education" },
+      { name: "Mark David L. Bartolata", college: "College of Political Science and Public Administration" },
+      { name: "Jamie SG. Hernandez", college: "College of Science" },
+      { name: "Mary Dawn Jhoana E. Laniog", college: "College of Social Sciences and Development" },
+      { name: "Mia Rizzi Lou R. Lucban", college: "Institute of Technology" },
+      { name: "Erika Nicole B. Bermudez", college: "Open University System" },
     ],
-    "Legal and Administrative Affairs Committee": [
-      "Aeron James G. Pacho",
-      "Gwyneth Indira V. Alamag",
-      "Elaizabeth R. Nucum",
-      "Ma. Victoria Maxime Moran",
-      "Kimberly Joyce D. Tatel",
-      "John Anthony V. Paborada"
+    staff: {
+      "Publications and Multimedia Committee": [
+        "Harlliequine N. Arizala",
+        "Juliana Dominique A. Pisueña",
+        "Lemuel A. Velasco",
+        "Neriah Phoebe M. Bobiles"
+      ],
+      "Programs and Events Committee": [
+        "Ma. Samantha Fhay D. Roque",
+        "Colin S. Del Rosario"
+      ],
+      "Legal and Administrative Affairs Committee": [
+        "Aeron James G. Pacho",
+        "Gwyneth Indira V. Alamag",
+        "Elaizabeth R. Nucum",
+        "Ma. Victoria Maxime Moran",
+        "Kimberly Joyce D. Tatel",
+        "John Anthony V. Paborada"
+      ],
+      "Secretariat Committee": [
+        "Hubert Clyde Z. Guillermo",
+        "Lucy Joy T. Dalida",
+        "Sherlyn Luna Fuentes"
+      ],
+      "Audit and Finance Committee": [
+        "Emmanuel D. Penuliar",
+        "Kathleen Grace Racelis",
+        "Elijah Lyn S. Sevilla"
+      ],
+      "Evaluation Committee": [
+        "Marro Daniel C. Alcantara",
+        "Mary Ruth P. Relator",
+        "Mark Rheyneil Z. Hembrador",
+        "Mira Nicole C. Libao"
+      ]
+    }
+  },
+  2023: {
+    commissioners: [
+      { name: "GAD THOMAS DEUEL S. MENDIOLA", title: "Chairperson", college: "College of Arts and Letters" },
+      { name: "LORIELYN Y. BELMONTE", title: "Vice Chairperson", college: "College of Communication" },
+      { name: "MELWEL ARCEL C. GORUMBA", title: "Secretary-General", college: "College of Accountancy and Finance" },
+      { name: "ANNA KATRINA C. TENA", title: "Treasurer", college: "College of Political Science and Public Administration" },
+      { name: "PIOLO MIGUEL A. BARCELONA", title: "Commissioner", college: "College of Architecture, Design and the Built Environment" },
+      { name: "ADAM JESS C. DE GUZMAN", title: "Commissioner", college: "College of Business Administration" },
+      { name: "LUKE MARK P. LEONA", title: "Commissioner", college: "College of Computer and Information Sciences" },
+      { name: "CARLOS JAIRO L. TIAGA", title: "Commissioner", college: "College of Engineering" },
+      { name: "KRISTAL ANDREA MARQUEZ", title: "Commissioner", college: "College of Human Kinetics" },
+      { name: "GENER AUGUST S. LINTAG", title: "Commissioner", college: "College of Education" },
+      { name: "MARY JOY B. DAGDAG", title: "Commissioner", college: "College of Science" },
+      { name: "PAUL JANRY D. ROLUSTA", title: "Commissioner", college: "College of Social Sciences and Development" },
+      { name: "ALYANNA MIKAELA DELOS REYES", title: "Commissioner", college: "College of Tourism, Hospitality, and Transportation Management" },
+      { name: "JUAN MIGUEL A. MORADO", title: "Commissioner", college: "College of Tourism, Hospitality, and Transportation Management" },
+      { name: "KEREN CLAIRE L. CABUELLO", title: "Commissioner", college: "Institute of Technology" },
+      { name: "FRINCE CARL N. FORTUNADO", title: "Commissioner", college: "Open University System" },
     ],
-    "Secretariat Committee": [
-      "Hubert Clyde Z. Guillermo",
-      "Lucy Joy T. Dalida",
-      "Sherlyn Luna Fuentes"
+    deputies: [
+      { name: "Bacon, Paul Anthony B.", college: "College of Arts and Letters" },
+      { name: "Oliva, Mark Gerson, L.", college: "College of Science" },
+      { name: "Cheryll Ann Ampoon", college: "College of Science" },
+      { name: "Rebancos John Albert D.", college: "Institute of Technology" },
+      { name: "Ebon, Trisha Mae B.", college: "College of Accountancy and Finance" },
+      { name: "Bognot, Kristina Cassandra, D.", college: "College of Computer and Information Sciences" },
+      { name: "Matibag, Yesha Lei", college: "College of Business Administration" },
+      { name: "Gonzales, Gabriel, R.", college: "College of Communication" },
+      { name: "Vargas, Maria Karyl, E.", college: "College of Human Kinetics" },
+      { name: "Madrid, Michael Jude, V", college: "College of Political Science and Public Administration" },
+      { name: "Marvie Angeline B. Dapo", college: "College of Political Science and Public Administration" },
+      { name: "Iringan, Divine Bea B.", college: "College of Education" },
+      { name: "Centeno, Fatima Kristine I.", college: "College of Social Sciences and Development" },
+      { name: "Mary Dawn Jhoana E. Laniog", college: "College of Social Sciences and Development" },
+      { name: "Manabat, Jerwin P.", college: "College of Architecture, Design and the Built Environment" },
+      { name: "Airish B. Aliento", college: "Open University System" },
     ],
-    "Audit and Finance Committee": [
-      "Emmanuel D. Penuliar",
-      "Kathleen Grace Racelis",
-      "Elijah Lyn S. Sevilla"
-    ],
-    "Evaluation Committee": [
-      "Marro Daniel C. Alcantara",
-      "Mary Ruth P. Relator",
-      "Mark Rheyneil Z. Hembrador",
-      "Mira Nicole C. Libao"
-    ]
-  }
-},
-2023: {
-  commissioners: [
-    { name: "GAD THOMAS DEUEL S. MENDIOLA", title: "Chairperson", college: "College of Arts and Letters" },
-    { name: "LORIELYN Y. BELMONTE", title: "Vice Chairperson", college: "College of Communication" },
-    { name: "MELWEL ARCEL C. GORUMBA", title: "Secretary-General", college: "College of Accountancy and Finance" },
-    { name: "ANNA KATRINA C. TENA", title: "Treasurer", college: "College of Political Science and Public Administration" },
-    { name: "PIOLO MIGUEL A. BARCELONA", title: "Commissioner", college: "College of Architecture, Design and the Built Environment" },
-    { name: "ADAM JESS C. DE GUZMAN", title: "Commissioner", college: "College of Business Administration" },
-    { name: "LUKE MARK P. LEONA", title: "Commissioner", college: "College of Computer and Information Sciences" },
-    { name: "CARLOS JAIRO L. TIAGA", title: "Commissioner", college: "College of Engineering" },
-    { name: "KRISTAL ANDREA MARQUEZ", title: "Commissioner", college: "College of Human Kinetics" },
-    { name: "GENER AUGUST S. LINTAG", title: "Commissioner", college: "College of Education" },
-    { name: "MARY JOY B. DAGDAG", title: "Commissioner", college: "College of Science" },
-    { name: "PAUL JANRY D. ROLUSTA", title: "Commissioner", college: "College of Social Sciences and Development" },
-    { name: "ALYANNA MIKAELA DELOS REYES", title: "Commissioner", college: "College of Tourism, Hospitality, and Transportation Management" },
-    { name: "JUAN MIGUEL A. MORADO", title: "Commissioner", college: "College of Tourism, Hospitality, and Transportation Management" },
-    { name: "KEREN CLAIRE L. CABUELLO", title: "Commissioner", college: "Institute of Technology" },
-    { name: "FRINCE CARL N. FORTUNADO", title: "Commissioner", college: "Open University System" },
-  ],
-  deputies: [
-    { name: "Bacon, Paul Anthony B.", college: "College of Arts and Letters" },
-    { name: "Oliva, Mark Gerson, L.", college: "College of Science" },
-    { name: "Cheryll Ann Ampoon", college: "College of Science" },
-    { name: "Rebancos John Albert D.", college: "Institute of Technology" },
-    { name: "Ebon, Trisha Mae B.", college: "College of Accountancy and Finance" },
-    { name: "Bognot, Kristina Cassandra, D.", college: "College of Computer and Information Sciences" },
-    { name: "Matibag, Yesha Lei", college: "College of Business Administration" },
-    { name: "Gonzales, Gabriel, R.", college: "College of Communication" },
-    { name: "Vargas, Maria Karyl, E.", college: "College of Human Kinetics" },
-    { name: "Madrid, Michael Jude, V", college: "College of Political Science and Public Administration" },
-    { name: "Marvie Angeline B. Dapo", college: "College of Political Science and Public Administration" },
-    { name: "Iringan, Divine Bea B.", college: "College of Education" },
-    { name: "Centeno, Fatima Kristine I.", college: "College of Social Sciences and Development" },
-    { name: "Mary Dawn Jhoana E. Laniog", college: "College of Social Sciences and Development" },
-    { name: "Manabat, Jerwin P.", college: "College of Architecture, Design and the Built Environment" },
-    { name: "Airish B. Aliento", college: "Open University System" },
-  ],
-  staff: {
-    "Publications and Multimedia Committee": [
-      "Jemelynne S. Picache",
-      "Reign Ysabelle A. Villareal",
-      "Timothy James T. Sucgang"
-    ],
-    "Programs and Events Committee": [
-      "Marielle T. Agader",
-      "Nicole Denice P. Laceda",
-      "Diana Mae T. Cudal",
-      "James Norman G. Tinio"
-    ],
-    "Legal and Administrative Affairs Committee": [
-      "Jela Mae G. Idanan",
-      "Wea Donna M. Aguilar",
-      "Neilvin John P. Aventurado"
-    ]
-  }
-},
+    staff: {
+      "Publications and Multimedia Committee": [
+        "Jemelynne S. Picache",
+        "Reign Ysabelle A. Villareal",
+        "Timothy James T. Sucgang"
+      ],
+      "Programs and Events Committee": [
+        "Marielle T. Agader",
+        "Nicole Denice P. Laceda",
+        "Diana Mae T. Cudal",
+        "James Norman G. Tinio"
+      ],
+      "Legal and Administrative Affairs Committee": [
+        "Jela Mae G. Idanan",
+        "Wea Donna M. Aguilar",
+        "Neilvin John P. Aventurado"
+      ]
+    }
+  },
 
   2022: {
     commissioners: [
