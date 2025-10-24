@@ -133,7 +133,7 @@ export const resultsData: {
       ],
       VicePresident: [
         { name: "Dela Rosa Sean”", position: "Vice President", votes: "No votes yet" 
-          ,photo: "/images/Candidates/CPSPA/Con 4.jpg" 
+          ,photo: "/images/Candidates/CPSPA/Con 4.png" 
         },
         { name: "Gutierrez Jascha ", position: "Vice President", votes: "No votes yet" 
           ,photo: "/images/Candidates/CPSPA/VP 2.png" 
