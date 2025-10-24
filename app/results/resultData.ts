@@ -132,8 +132,8 @@ export const resultsData: {
         },
       ],
       VicePresident: [
-        { name: "Dela Rosa Sean”", position: "Vice President", votes: "No votes yet" 
-          ,photo: "/images/Candidates/CPSPA/Con 4.png" 
+        { name: "Delante Christian Lloyd Jandrin", position: "Vice President", votes: "No votes yet" 
+          ,photo: "/images/Candidates/CPSPA/Con 5.png" 
         },
         { name: "Gutierrez Jascha ", position: "Vice President", votes: "No votes yet" 
           ,photo: "/images/Candidates/CPSPA/VP 2.png" 
@@ -152,8 +152,8 @@ export const resultsData: {
     { name: "De Leon Alfonso Bernard S", position: "Councilor", votes: "No votes yet" 
       ,photo: "/images/Candidates/CPSPA/VP 1.jpg" 
     },
-    { name: "Christian Lloyd “Jandrik” Delante", position: "Councilor", votes: "No votes yet" 
-      ,photo: "/images/Candidates/CPSPA/Con 5.png" 
+    { name: "Dela Rosa Sean", position: "Councilor", votes: "No votes yet" 
+      ,photo: "/images/Candidates/CPSPA/Con 4.png" 
     },
     { name: "Fernandez Joselle Bernard “jow”", position: "Councilor", votes: "No votes yet"
       ,photo: "/images/Candidates/CPSPA/Con 6.jpg" 
