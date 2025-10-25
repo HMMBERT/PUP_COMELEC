@@ -41,23 +41,23 @@ const qrLinks: Record<string, string> = {
   "Open University System (OUS)": "https://tinyurl.com/OUSOfficialBallot2025",
 };
 
-// --- ADDED DATA FROM IMAGE ---
+// --- UPDATED DATA FROM IMAGE ---
 const voteCounts: Record<string, number> = {
-  "College of Arts and Letters (CAL)": 673,
-  "College of Political Science and Public Administration (CPSPA)": 778,
-  "College of Human Kinetics (CHK)": 11,
-  "College of Accountancy and Finance (CAF)": 1793,
-  "College of Architecture, Design and the Built Environment (CADBE)": 79,
-  "College of Business Administration (CBA)": 476,
-  "College of Computer and Information Sciences (CCIS)": 372,
-  "College of Engineering (CE)": 299,
-  "College of Communication (COC)": 357,
-  "College of Education (COED)": 296,
-  "College of Science (CS)": 365,
-  "College of Social Sciences and Development (CSSD)": 566,
-  "College of Tourism, Hospitality, and Transportation Management (CTHTM)": 168,
-  "Institute of Technology (ITECH)": 593,
-  "Open University System (OUS)": 623,
+  "College of Arts and Letters (CAL)": 1065,
+  "College of Political Science and Public Administration (CPSPA)": 961,
+  "College of Human Kinetics (CHK)": 58,
+  "College of Accountancy and Finance (CAF)": 2622,
+  "College of Architecture, Design and the Built Environment (CADBE)": 145,
+  "College of Business Administration (CBA)": 1185,
+  "College of Computer and Information Sciences (CCIS)": 517,
+  "College of Engineering (CE)": 369,
+  "College of Communication (COC)": 596,
+  "College of Education (COED)": 401,
+  "College of Science (CS)": 468,
+  "College of Social Sciences and Development (CSSD)": 691,
+  "College of Tourism, Hospitality, and Transportation Management (CTHTM)": 444,
+  "Institute of Technology (ITECH)": 830,
+  "Open University System (OUS)": 1275,
 };
 // -----------------------------
 
@@ -65,9 +65,7 @@ export default function VotePage() {
   const [selectedCollege, setSelectedCollege] = useState<string>("");
 
   const qrLink = selectedCollege ? qrLinks[selectedCollege] : null;
-  // --- ADDED VOTE COUNT LOGIC ---
   const voteCount = selectedCollege ? voteCounts[selectedCollege] : null;
-  // ------------------------------
 
   return (
     <div className="relative flex min-h-screen flex-col bg-slate-950 text-white">
@@ -88,15 +86,15 @@ export default function VotePage() {
           Select Your College
         </motion.h1>
 
-        {/* --- ADDED TOTAL VOTES --- */}
+        {/* --- UPDATED TOTAL VOTES --- */}
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.2 }}
           className="mt-4 text-xl text-slate-400"
         >
-          Total Voter Turnout:{" "}
-          <span className="font-bold text-sky-400">7,449</span>
+          Total Voter Turnout as of 8:00 AM:{" "}
+          <span className="font-bold text-sky-400">11,627</span>
         </motion.p>
         {/* ------------------------- */}
 
@@ -125,7 +123,7 @@ export default function VotePage() {
             transition={{ duration: 0.6 }}
             className="mt-16 flex flex-col items-center"
           >
-            {/* --- ADDED SELECTED COLLEGE VOTES --- */}
+            {/* Display selected college's votes */}
             {voteCount !== null && (
               <div className="mb-8">
                 <p className="text-lg text-slate-300">Voter Turnout:</p>
@@ -134,7 +132,6 @@ export default function VotePage() {
                 </p>
               </div>
             )}
-            {/* ------------------------------------ */}
 
             <div className="border-t border-blue-900/50 pt-12">
               <Image

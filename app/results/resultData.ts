@@ -431,22 +431,20 @@ export const resultsData: {
          },
       ],
      Councilors: [
-      { name: "Rubio Nikkolei Jan", position: "Councilor", votes: "No votes yet" 
-        ,photo: "/images/Candidates/COS/Con 1.png"
+      { name: "Demillo Christian Ed A.", position: "Councilor", votes: "No votes yet" 
+        ,photo: "/images/Candidates/COS/Con 1.png" 
       },
-    { name: "Marquez Johnny", position: "Councilor", votes: "No votes yet"  
+    { name: "Indar Ayeshah", position: "Councilor", votes: "No votes yet"  
       ,photo: "/images/Candidates/COS/Con 2.png"},
-    { name: "Reyes Emmanuel", position: "Councilor", votes: "No votes yet" 
-       ,photo: "/images/Candidates/COS/Con 3.png"
-    },
-    { name: "Demillo Christian Ed A.", position: "Councilor", votes: "No votes yet" 
+
+    { name: "Marquez Johnny", position: "Councilor", votes: "No votes yet" 
        ,photo: "/images/Candidates/COS/Con 4.jpg"
     },
-    { name: "Indar Ayeshah", position: "Councilor", votes: "No votes yet" 
-       ,photo: "/images/Candidates/COS/Con 5.JPEG"
+    { name: "Rubio Nikkolei Jan", position: "Councilor", votes: "No votes yet" 
+       ,photo: "/images/Candidates/COS/Con 6.jpg"
     },
     { name: "Luciñada Irene", position: "Councilor", votes: "No votes yet" 
-       ,photo: "/images/Candidates/COS/Con 6.jpg"
+       ,photo: "/images/Candidates/COS/Con 3.png"
     },
   
    ]  },
