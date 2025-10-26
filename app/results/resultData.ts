@@ -463,9 +463,7 @@ export const resultsData: {
         { name: "SOLON JERSON", position: "Vice President", votes: "No votes yet"
           ,photo: "/images/Candidates/CSSD/VP 1.png"
          },
-        { name: "Tinio Adriene ", position: "Vice President", votes: "No votes yet" 
-           ,photo: "/images/Candidates/CSSD/VP 2.jpg"
-        },
+        
       ],
         Councilors: [
       { name: "Almazan EMRYS M.", position: "Councilor", votes: "No votes yet" 
@@ -559,7 +557,6 @@ export const resultsData: {
 
     "Open University System": {President: [
         { name: "Santiago Danielle", position: "President", votes: "No votes yet", photo: "/images/Candidates/OUS/OUS PRES.jpeg", },
-        { name: "Villanueva Lex", position: "President", votes: "No votes yet", photo: "/images/Candidates/OUS/OUS PRES 2.jpeg", },
       ],
       VicePresident: [
         { name: "Sulvita Mark Lawrence", position: "Vice President", votes: "No votes yet", photo: "/images/Candidates/OUS/OUS VP.JPG", },

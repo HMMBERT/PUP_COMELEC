@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, FC } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import Footer from "@/components/ui/footer";
+// import Image from "next/image"; // Removed to fix import error
+// import Footer from "@/components/ui/footer"; // Original import, now inlined
 
 const colleges = [
   "College of Arts and Letters (CAL)",
@@ -23,43 +23,56 @@ const colleges = [
   "Open University System (OUS)",
 ];
 
+// --- UPDATED LINKS ---
+// All links now go to the voting closed page.
+const votingClosedLink = "/closing"; // Assumed path to your VotingClosedPage.jsx
 const qrLinks: Record<string, string> = {
-  "College of Arts and Letters (CAL)": "https://tinyurl.com/CALOfficialBallot2025",
-  "College of Political Science and Public Administration (CPSPA)": "https://tinyurl.com/CPSPAOfficialBallot2025",
-  "College of Human Kinetics (CHK)": "https://tinyurl.com/CHKOfficialBallot2025",
-  "College of Accountancy and Finance (CAF)": "https://tinyurl.com/CAFOfficialBallot2025",
-  "College of Architecture, Design and the Built Environment (CADBE)": "https://tinyurl.com/CADBEOfficialBallot2025",
-  "College of Business Administration (CBA)": "https://tinyurl.com/CBAOfficialBallot2025",
-  "College of Computer and Information Sciences (CCIS)": "https://tinyurl.com/CCISOfficialBallot2025",
-  "College of Engineering (CE)": "https://tinyurl.com/CEOfficialBallot2025",
-  "College of Communication (COC)": "https://tinyurl.com/COCOfficialBallot2025",
-  "College of Education (COED)": "https://tinyurl.com/COEDOfficialBallot2025",
-  "College of Science (CS)": "https://tinyurl.com/CSOfficialBallot2025",
-  "College of Social Sciences and Development (CSSD)": "https://tinyurl.com/CSSDOfficialBallot2025",
-  "College of Tourism, Hospitality, and Transportation Management (CTHTM)": "https://tinyurl.com/CTHTMOfficialBallot2025",
-  "Institute of Technology (ITECH)": "https://tinyurl.com/ITECHOfficialBallot2025",
-  "Open University System (OUS)": "https://tinyurl.com/OUSOfficialBallot2025",
+  "College of Arts and Letters (CAL)": votingClosedLink,
+  "College of Political Science and Public Administration (CPSPA)": votingClosedLink,
+  "College of Human Kinetics (CHK)": votingClosedLink,
+  "College of Accountancy and Finance (CAF)": votingClosedLink,
+  "College of Architecture, Design and the Built Environment (CADBE)": votingClosedLink,
+  "College of Business Administration (CBA)": votingClosedLink,
+  "College of Computer and Information Sciences (CCIS)": votingClosedLink,
+  "College of Engineering (CE)": votingClosedLink,
+  "College of Communication (COC)": votingClosedLink,
+  "College of Education (COED)": votingClosedLink,
+  "College of Science (CS)": votingClosedLink,
+  "College of Social Sciences and Development (CSSD)": votingClosedLink,
+  "College of Tourism, Hospitality, and Transportation Management (CTHTM)": votingClosedLink,
+  "Institute of Technology (ITECH)": votingClosedLink,
+  "Open University System (OUS)": votingClosedLink,
 };
 
 // --- UPDATED DATA FROM IMAGE ---
 const voteCounts: Record<string, number> = {
-  "College of Arts and Letters (CAL)": 1266,
-  "College of Political Science and Public Administration (CPSPA)": 1131,
-  "College of Human Kinetics (CHK)": 67,
-  "College of Accountancy and Finance (CAF)": 3170,
-  "College of Architecture, Design and the Built Environment (CADBE)": 236,
-  "College of Business Administration (CBA)": 1670,
-  "College of Computer and Information Sciences (CCIS)": 600,
-  "College of Engineering (CE)": 712,
-  "College of Communication (COC)": 1003,
-  "College of Education (COED)": 472,
-  "College of Science (CS)": 529,
-  "College of Social Sciences and Development (CSSD)": 834,
-  "College of Tourism, Hospitality, and Transportation Management (CTHTM)": 540,
-  "Institute of Technology (ITECH)": 899,
-  "Open University System (OUS)": 1574,
+  "College of Arts and Letters (CAL)": 1499,
+  "College of Political Science and Public Administration (CPSPA)": 1286,
+  "College of Human Kinetics (CHK)": 85,
+  "College of Accountancy and Finance (CAF)": 3537,
+  "College of Architecture, Design and the Built Environment (CADBE)": 352,
+  "College of Business Administration (CBA)": 2042,
+  "College of Computer and Information Sciences (CCIS)": 794,
+  "College of Engineering (CE)": 1357,
+  "College of Communication (COC)": 1119,
+  "College of Education (COED)": 581,
+  "College of Science (CS)": 895,
+  "College of Social Sciences and Development (CSSD)": 1044,
+  "College of Tourism, Hospitality, and Transportation Management (CTHTM)": 864,
+  "Institute of Technology (ITECH)": 1042,
+  "Open University System (OUS)": 1762,
 };
 // -----------------------------
+
+// --- Footer Component (Inlined) ---
+// A simple footer to avoid import errors.
+const Footer: FC = () => (
+  <footer className="relative z-10 mt-auto border-t border-slate-800/50 py-6 text-center">
+    <p className="text-sm text-slate-500">
+      PUP COMELEC &copy; 2025. All rights reserved.
+    </p>
+  </footer>
+);
 
 export default function VotePage() {
   const [selectedCollege, setSelectedCollege] = useState<string>("");
@@ -93,8 +106,8 @@ export default function VotePage() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="mt-4 text-xl text-slate-400"
         >
-          Total Voter Turnout as of 8:00 AM:{" "}
-          <span className="font-bold text-sky-400">11,627</span>
+          Total Voter Turnout as of 11:59 PM:{" "}
+          <span className="font-bold text-sky-400">18,259</span>
         </motion.p>
         {/* ------------------------- */}
 
@@ -117,7 +130,7 @@ export default function VotePage() {
         {/* QR Section */}
         {qrLink && (
           <motion.div
-            key={qrLink}
+            key={qrLink} // Note: This key will no longer change per college
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -134,11 +147,11 @@ export default function VotePage() {
             )}
 
             <div className="border-t border-blue-900/50 pt-12">
-              <Image
+              <img
                 src={`https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(
                   qrLink
                 )}&size=200x200&color=002266`}
-                alt="College QR Code"
+                alt="Voting Closed QR Code"
                 width={200}
                 height={200}
                 className="mx-auto rounded-lg shadow-xl shadow-blue-900/40"
@@ -146,7 +159,7 @@ export default function VotePage() {
             </div>
 
             <p className="mt-5 text-lg text-slate-200 font-semibold tracking-wide">
-              📱 Scan to Access Your College Form
+              📱 Scan to Check Status
             </p>
 
             <motion.a
@@ -157,7 +170,7 @@ export default function VotePage() {
               whileTap={{ scale: 0.97 }}
               className="mt-8 inline-block rounded-full border border-sky-500/50 bg-sky-600/20 px-8 py-3 text-lg font-semibold text-sky-300 shadow-lg backdrop-blur-md transition-all duration-300 hover:bg-sky-700/30 hover:text-sky-200 hover:shadow-sky-500/30"
             >
-              Go to College Form →
+              Check Voting Status
             </motion.a>
           </motion.div>
         )}
