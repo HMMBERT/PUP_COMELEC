@@ -3,53 +3,69 @@
 import { useState, FC } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { resultsData, Candidate } from "./resultData";
+// Assuming resultData is in the same directory, adjust if needed
+import { resultsData, Candidate, sortAllCouncilors } from "./resultData";
 import Footer from "@/components/ui/footer";
+
+// --- Sort the data once on load ---
+// This mutates the object, so it only needs to be run once.
+sortAllCouncilors(resultsData);
 
 // --- Placeholder for image path ---
 const placeholder = "/images/candidatePlaceholder.png";
 
 // --- Candidate List Component ---
-const CandidateList = ({ title, candidates }: { title: string; candidates: Candidate[] }) => (
-  <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5 }}
-    className="mb-10"
-  >
-    <h3 className="mb-6 border-b border-blue-800/50 pb-3 text-2xl font-bold text-sky-400">
-      {title}
-    </h3>
-    <div className="space-y-4">
-      {candidates.map((c, idx) => (
-        <motion.div
-          key={c.name}
-          whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
-          className={`flex items-center justify-between rounded-xl border p-4 shadow-sm transition-all duration-300 ${
-            idx === 0
-              ? "border-sky-500/50 bg-gradient-to-r from-sky-600/20 to-slate-900/20 shadow-sky-600/20"
-              : "border-slate-800 bg-slate-900/50 hover:border-sky-500/50"
-          }`}
-        >
-          <div className="flex items-center gap-4">
-            <Image
-              src={c.photo || placeholder}
-              alt={`Photo of ${c.name}`}
-              width={48}
-              height={48}
-              className="h-12 w-12 rounded-md border border-slate-700 object-cover shadow-sm"
-            />
-            <div>
-              <span className="block font-medium text-slate-100">{c.name}</span>
-              <span className="text-xs text-slate-400">{c.position}</span>
-            </div>
-          </div>
-          <span className="font-mono text-slate-300">{c.votes}</span>
-        </motion.div>
-      ))}
-    </div>
-  </motion.div>
-);
+const CandidateList = ({ title, candidates }: { title: string; candidates: Candidate[] }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="mb-10"
+    >
+      <h3 className="mb-6 border-b border-blue-800/50 pb-3 text-2xl font-bold text-sky-400">
+        {title}
+      </h3>
+      <div className="space-y-4">
+        {candidates.map((c, idx) => {
+          // --- MODIFIED LOGIC HERE ---
+          // Check if the candidate is a "winner"
+          // For Councilors, top 6 are winners. For others, only top 1.
+          const isWinner = title === "Councilors" ? idx < 6 : idx === 0;
+
+          return (
+            <motion.div
+              key={c.name}
+              whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
+              // Apply winner style based on the 'isWinner' variable
+              className={`flex items-center justify-between rounded-xl border p-4 shadow-sm transition-all duration-300 ${
+                isWinner
+                  ? "border-sky-500/60 bg-gradient-to-r from-sky-500/25 to-blue-900/20 shadow-sky-500/20" // Enhanced Winner style
+                  : "border-slate-800 bg-slate-900/50 hover:border-sky-500/50"
+              }`}
+            >
+              <div className="flex items-center gap-4">
+                <Image
+                  src={c.photo || placeholder}
+                  alt={`Photo of ${c.name}`}
+                  width={48}
+                  height={48}
+                  className="h-12 w-12 rounded-md border border-slate-700 object-cover shadow-sm"
+                  onError={(e) => (e.currentTarget.src = placeholder)} // Fallback
+                />
+                <div>
+                  <span className="block font-medium text-slate-100">{c.name}</span>
+                  <span className="text-xs text-slate-400">{c.position}</span>
+                </div>
+              </div>
+              <span className="font-mono text-slate-300">{c.votes}</span>
+            </motion.div>
+          );
+        })}
+      </div>
+    </motion.div>
+  );
+};
 
 // --- Main Page ---
 export default function ResultsPage() {
