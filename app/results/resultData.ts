@@ -21,50 +21,50 @@ export const resultsData: {
 } = {
   skm: {
     President: [
-      { name: "Azusano Jp", position: "President", votes: "4,413" 
+      { name: "Azusano Jp", position: "President", votes: "12,102" 
         ,photo: "/images/Candidates/SKM/Pres 1.png" 
       },
       
      
     ],
     VicePresident: [
-      { name: "Ramos Tracy", position: "Vice President", votes: "4,361" 
+      { name: "Ramos Tracy", position: "Vice President", votes: "12,085" 
         ,photo: "/images/Candidates/SKM/VP 1.jpg" 
       },
      
     ],
  Councilors: [
-      { name: "Alsisto Noriko", position: "Councilor", votes: "3,426" 
+      { name: "Alsisto Noriko", position: "Councilor", votes: "0,213" 
         ,photo: "/images/Candidates/SKM/Con 1.jpg" 
       },
-    { name: "Araneta Frank", position: "Councilor", votes: "3,735"
+    { name: "Araneta Frank", position: "Councilor", votes: "9,978"
        ,photo: "/images/Candidates/SKM/Con 2.png" 
      },
-    { name: "Bolima Dave", position: "Councilor", votes: "3,436" 
+    { name: "Bolima Dave", position: "Councilor", votes: "9,317" 
       ,photo: "/images/Candidates/SKM/Con 3.png" 
     },
-    { name: "Buleg JR. Suharto", position: "Councilor", votes: "3,393"
+    { name: "Buleg JR. Suharto", position: "Councilor", votes: "8,918"
       ,photo: "/images/Candidates/SKM/Con 4.png" 
      },
-    { name: "Dayao Trejor", position: "Councilor", votes: "3,347" 
+    { name: "Dayao Trejor", position: "Councilor", votes: "8,953" 
       ,photo: "/images/Candidates/SKM/Con 6.png" 
     },
-    { name: "Eugenio Kim", position: "Councilor", votes: "3,528"
+    { name: "Eugenio Kim", position: "Councilor", votes: "9,555"
        ,photo: "/images/Candidates/SKM/Con 7.jpg" 
      },
-    { name: "Evangelista JJ", position: "Councilor", votes: "3,398"
+    { name: "Evangelista JJ", position: "Councilor", votes: "9,115"
        ,photo: "/images/Candidates/SKM/Con 8.PNG" 
      },
-    { name: "Hizon Sef", position: "Councilor", votes: "3,355" 
+    { name: "Hizon Sef", position: "Councilor", votes: "9,884" 
        ,photo: "/images/Candidates/SKM/Con 9.jpg" 
     },
-     { name: "Plicerda Von", position: "Councilor", votes: "3,367" 
+     { name: "Plicerda Von", position: "Councilor", votes: "9,000" 
        ,photo: "/images/Candidates/SKM/Con 10.png" 
      },
-      { name: "Salvador Enzo", position: "Councilor", votes: "3,377" 
+      { name: "Salvador Enzo", position: "Councilor", votes: "9,110" 
          ,photo: "/images/Candidates/SKM/Con 11.png" 
       },
-       { name: "Tupaz Jelaine", position: "Councilor", votes: "3,494"
+       { name: "Tupaz Jelaine", position: "Councilor", votes: "9,297"
          ,photo: "/images/Candidates/SKM/Con 12.png" 
         },
     ]
@@ -121,41 +121,39 @@ export const resultsData: {
     },
     "College of Political Science and Public Administration": {
       President: [
-        { name: "Torne Wellysa", position: "President", votes: "No votes yet"
+        { name: "Torne Wellysa", position: "President", votes: "415"
           ,photo: "/images/Candidates/CPSPA/Pres 1.jpeg" 
          },
-        { name: "Ubani Cherry Jhoana", position: "President", votes: "No votes yet" 
+        { name: "Ubani Cherry Jhoana", position: "President", votes: "636" 
           ,photo: "/images/Candidates/CPSPA/Pres 2.png" 
         },
       ],
       VicePresident: [
-        { name: "Delante Christian Lloyd Jandrin", position: "Vice President", votes: "No votes yet" 
+        { name: "Delante Christian Lloyd Jandrin", position: "Vice President", votes: "285" 
           ,photo: "/images/Candidates/CPSPA/Con 5.png" 
         },
-        { name: "Gutierrez Jascha ", position: "Vice President", votes: "No votes yet" 
+        { name: "Gutierrez Jascha ", position: "Vice President", votes: "726" 
           ,photo: "/images/Candidates/CPSPA/VP 2.png" 
         },
       ],
       Councilors: [
-      { name: "Arcabos Syra", position: "Councilor", votes: "No votes yet" 
+      { name: "Arcabos Syra", position: "Councilor", votes: "801" 
         ,photo: "/images/Candidates/CPSPA/Con 1.png" 
       },
-      { name: "Angelo Balce", position: "Councilor", votes: "No votes yet"
-        ,photo: "/images/Candidates/CPSPA/Con 2.jpg" 
-       },
-    { name: "Cruz Francis Miguel A.", position: "Councilor", votes: "No votes yet"
+     
+    { name: "Cruz Francis Miguel A.", position: "Councilor", votes: "582"
       ,photo: "/images/Candidates/CPSPA/Con 3.png" 
      },
-    { name: "De Leon Alfonso Bernard S", position: "Councilor", votes: "No votes yet" 
+    { name: "De Leon Alfonso Bernard S", position: "Councilor", votes: "385" 
       ,photo: "/images/Candidates/CPSPA/VP 1.jpg" 
     },
-    { name: "Dela Rosa Sean", position: "Councilor", votes: "No votes yet" 
+    { name: "Dela Rosa Sean", position: "Councilor", votes: "828" 
       ,photo: "/images/Candidates/CPSPA/Con 4.png" 
     },
-    { name: "Fernandez Joselle Bernard “jow”", position: "Councilor", votes: "No votes yet"
+    { name: "Fernandez Joselle Bernard “jow”", position: "Councilor", votes: "416"
       ,photo: "/images/Candidates/CPSPA/Con 6.jpg" 
      },
-    { name: "Revillas Jc", position: "Councilor", votes: "No votes yet"
+    { name: "Revillas Jc", position: "Councilor", votes: "796"
       ,photo: "/images/Candidates/CPSPA/Con 7.png" 
      },
     ]
@@ -228,22 +226,22 @@ export const resultsData: {
 
 
     "College of Architecture, Design and the Built Environment": { President: [
-        { name: "Agustin Janina", position: "President", votes: "No votes yet"
+        { name: "Agustin Janina", position: "President", votes: "262"
           ,photo: "/images/Candidates/CADBE/Pres 1.jpg" 
          },
        
       ],
       VicePresident: [
-        { name: "Gutierrez Jea Kristel", position: "Vice President", votes: "No votes yet" 
+        { name: "Gutierrez Jea Kristel", position: "Vice President", votes: "266" 
           ,photo: "/images/Candidates/CADBE/VP 1.jpg" 
         },
         
       ],
        Councilors: [
-      { name: "Gahoc Marco", position: "Councilor", votes: "No votes yet" 
+      { name: "Gahoc Marco", position: "Councilor", votes: "232" 
         ,photo: "/images/Candidates/CADBE/Con 1.jpg" 
       },
-    { name: "Villorente Ralf", position: "Councilor", votes: "No votes yet" 
+    { name: "Villorente Ralf", position: "Councilor", votes: "213" 
        ,photo: "/images/Candidates/CADBE/Con 2.png" 
     },
    
@@ -254,32 +252,32 @@ export const resultsData: {
 
 
     "College of Business Administration": { President: [
-        { name: "Atender AdrIanne Athea", position: "President", votes: "No votes yet"
+        { name: "Atender AdrIanne Athea", position: "President", votes: "1,632"
           ,photo: "/images/Candidates/CBA/Pres 1.png" 
          },
       ],
       VicePresident: [
-        { name: "Furto Jen", position: "Vice President", votes: "No votes yet" 
+        { name: "Furto Jen", position: "Vice President", votes: "1,625" 
             ,photo: "/images/Candidates/CBA/VP 1.jpg" 
         }, 
       ],
     Councilors: [
-      { name: "Bautista Haziel Jachin", position: "Councilor", votes: "No votes yet" 
+      { name: "Bautista Haziel Jachin", position: "Councilor", votes: "1,446" 
          ,photo: "/images/Candidates/CBA/Con 1.png"
       },
-    { name: "Cobico Carl Raine", position: "Councilor", votes: "No votes yet"
+    { name: "Cobico Carl Raine", position: "Councilor", votes: "1,324"
         ,photo: "/images/Candidates/CBA/Con 2.png"
      },
-   { name: "Imperial Jush Earl", position: "Councilor", votes: "No votes yet" 
+   { name: "Imperial Jush Earl", position: "Councilor", votes: "1,340" 
       ,photo: "/images/Candidates/CBA/Con 3.jpg"
    },
-   { name: "Tabagan Gheffanie", position: "Councilor", votes: "No votes yet" 
+   { name: "Tabagan Gheffanie", position: "Councilor", votes: "1,300" 
       ,photo: "/images/Candidates/CBA/Con 4.JPG"
    },
-   { name: "Usi SharIne Ashanti", position: "Councilor", votes: "No votes yet" 
+   { name: "Usi SharIne Ashanti", position: "Councilor", votes: "1,376" 
       ,photo: "/images/Candidates/CBA/Con 5.jpg"
    },
-   { name: "Vega Jojie", position: "Councilor", votes: "No votes yet" 
+   { name: "Vega Jojie", position: "Councilor", votes: "1,259" 
       ,photo: "/images/Candidates/CBA/Con 6.jpg"
    },
     ]
@@ -321,23 +319,23 @@ export const resultsData: {
 
     ] },
     "College of Engineering": {President: [
-        { name: "Landicho Keeth Monce", position: "President", votes: "No votes yet"
+        { name: "Landicho Keeth Monce", position: "President", votes: "914"
           ,photo: "/images/Candidates/CEA/Pres 1.jpg"
          },
       ],
       VicePresident: [
-        { name: "Hailar Kian Michael", position: "Vice President", votes: "No votes yet" 
+        { name: "Hailar Kian Michael", position: "Vice President", votes: "903" 
             ,photo: "/images/Candidates/CEA/VP 1.jpeg"
         },
       ],
      Councilors: [
-      { name: "Atienza Harry", position: "Councilor", votes: "No votes yet" 
+      { name: "Atienza Harry", position: "Councilor", votes: "789" 
           ,photo: "/images/Candidates/CEA/Con 1.png"
       },
-    { name: "Dela Cruz Alliah Krystel", position: "Councilor", votes: "No votes yet" 
+    { name: "Dela Cruz Alliah Krystel", position: "Councilor", votes: "746" 
         ,photo: "/images/Candidates/CEA/Con 2.png"
     },
-   { name: "Queddeng Frances Ayanna S.", position: "Councilor", votes: "No votes yet"
+   { name: "Queddeng Frances Ayanna S.", position: "Councilor", votes: "695"
       ,photo: "/images/Candidates/CEA/Con 3.jpg"
     },
    
@@ -352,34 +350,34 @@ export const resultsData: {
 
 
     "College of Communication": {President: [
-        { name: "Aligam Alvin V.", position: "President", votes: "No votes yet" 
+        { name: "Aligam Alvin V.", position: "President", votes: "837" 
            ,photo: "/images/Candidates/COC/Pres 1.png"
         },
       ],
       VicePresident: [
-        { name: "Briol Martha Bernadette", position: "Vice President", votes: "No votes yet" 
+        { name: "Briol Martha Bernadette", position: "Vice President", votes: "896" 
            ,photo: "/images/Candidates/COC/VP 1.jpg"
         },
 
       ],
        Councilors: [
 
-      { name: "Mariano Haizel", position: "Councilor", votes: "No votes yet" 
+      { name: "Mariano Haizel", position: "Councilor", votes: "666" 
          ,photo: "/images/Candidates/COC/Con 1 .jpg"
       },
-      { name: "Polido Cheska", position: "Councilor", votes: "No votes yet" 
+      { name: "Polido Cheska", position: "Councilor", votes: "700" 
          ,photo: "/images/Candidates/COC/Con 2.jpg"
       },
-      { name: "Rendon Desiree Angeline", position: "Councilor", votes: "No votes yet"
+      { name: "Rendon Desiree Angeline", position: "Councilor", votes: "656"
          ,photo: "/images/Candidates/COC/Con 3.png"
        },
-      { name: "San Andres Emmanuel", position: "Councilor", votes: "No votes yet"
+      { name: "San Andres Emmanuel", position: "Councilor", votes: "676"
          ,photo: "/images/Candidates/COC/Con 4.png"
        },
-    { name: "Valdez Parzyval Peron", position: "Councilor", votes: "No votes yet" 
+    { name: "Valdez Parzyval Peron", position: "Councilor", votes: "676" 
        ,photo: "/images/Candidates/COC/Con 5.png"
     },
-     { name: "Villagomez Abijah John", position: "Councilor", votes: "No votes yet" 
+     { name: "Villagomez Abijah John", position: "Councilor", votes: "666" 
        ,photo: "/images/Candidates/COC/Con 6.JPG"
      },
    ] },
@@ -418,29 +416,29 @@ export const resultsData: {
 
 
     "College of Science": {President: [
-        { name: "Pangan Luisa ", position: "President", votes: "No votes yet" 
+        { name: "Pangan Luisa ", position: "President", votes: "591" 
             ,photo: "/images/Candidates/COS/Pres 1.png"
         },
       ],
       VicePresident: [
-        { name: "Perez Jio", position: "Vice President", votes: "No votes yet"
+        { name: "Perez Jio", position: "Vice President", votes: "604"
           ,photo: "/images/Candidates/COS/VP 1.png"
          },
       ],
      Councilors: [
-      { name: "Demillo Christian Ed A.", position: "Councilor", votes: "No votes yet" 
+      { name: "Demillo Christian Ed A.", position: "Councilor", votes: "533" 
         ,photo: "/images/Candidates/COS/Con 1.png" 
       },
-    { name: "Indar Ayeshah", position: "Councilor", votes: "No votes yet"  
+    { name: "Indar Ayeshah", position: "Councilor", votes: "505"  
       ,photo: "/images/Candidates/COS/Con 2.png"},
 
-    { name: "Marquez Johnny", position: "Councilor", votes: "No votes yet" 
+    { name: "Marquez Johnny", position: "Councilor", votes: "515" 
        ,photo: "/images/Candidates/COS/Con 4.jpg"
     },
-    { name: "Rubio Nikkolei Jan", position: "Councilor", votes: "No votes yet" 
+    { name: "Rubio Nikkolei Jan", position: "Councilor", votes: "569" 
        ,photo: "/images/Candidates/COS/Con 6.jpg"
     },
-    { name: "Luciñada Irene", position: "Councilor", votes: "No votes yet" 
+    { name: "Luciñada Irene", position: "Councilor", votes: "526" 
        ,photo: "/images/Candidates/COS/Con 3.png"
     },
   
@@ -489,32 +487,32 @@ export const resultsData: {
 
 
     "College of Tourism, Hospitality, and Transportation Management": {President: [
-        { name: "Tongco Roman ", position: "President", votes: "No votes yet"
+        { name: "Tongco Roman ", position: "President", votes: "550"
                 ,photo: "/images/Candidates/CTHTM/Pres 1.jpg"
          },
       ],
       VicePresident: [
-        { name: "Maraon Kael", position: "Vice President", votes: "No votes yet" 
+        { name: "Maraon Kael", position: "Vice President", votes: "546" 
           ,photo: "/images/Candidates/CTHTM/VP 1.jpg"
         },
       ],
        Councilors: [
-      { name: "Ambal Mae Kristine", position: "Councilor", votes: "No votes yet"
+      { name: "Ambal Mae Kristine", position: "Councilor", votes: "441"
           ,photo: "/images/Candidates/CTHTM/Con 1.jpg"
        },
-    { name: "Basilonia Yvette", position: "Councilor", votes: "No votes yet"
+    { name: "Basilonia Yvette", position: "Councilor", votes: "439"
       ,photo: "/images/Candidates/CTHTM/Con 2.jpg"
      },
-   { name: "Chua Heaven", position: "Councilor", votes: "No votes yet"
+   { name: "Chua Heaven", position: "Councilor", votes: "466"
     ,photo: "/images/Candidates/CTHTM/Con 3.jpg"
     },
-   { name: "Gumera Janille Joy", position: "Councilor", votes: "No votes yet"
+   { name: "Gumera Janille Joy", position: "Councilor", votes: "442"
     ,photo: "/images/Candidates/CTHTM/Con 4.png"
     },
-   { name: "Montero Maria Althea", position: "Councilor", votes: "No votes yet"
+   { name: "Montero Maria Althea", position: "Councilor", votes: "470"
     ,photo: "/images/Candidates/CTHTM/Con 5.png"
     },
-   { name: "Pablo April Jazz", position: "Councilor", votes: "No votes yet" 
+   { name: "Pablo April Jazz", position: "Councilor", votes: "410" 
     ,photo: "/images/Candidates/CTHTM/Con 6.jpg"
    },
   ]
@@ -523,26 +521,26 @@ export const resultsData: {
 
 
     "Institute of Technology": {President: [
-        { name: "Nicolas John Ivan", position: "President", votes: "No votes yet" 
+        { name: "Nicolas John Ivan", position: "President", votes: "805t" 
           ,photo: "/images/Candidates/ITECH/Pres 1.jpg"
         },
       ],
       VicePresident: [
-        { name: "Gragasin Gio ", position: "Vice President", votes: "No votes yet" 
+        { name: "Gragasin Gio ", position: "Vice President", votes: "813" 
            ,photo: "/images/Candidates/ITECH/VP 1.jpg"
         },
       ],
      Councilors: [
-      { name: "Cayabyab JD", position: "Councilor", votes: "No votes yet"
+      { name: "Cayabyab JD", position: "Councilor", votes: "680 "
          ,photo: "/images/Candidates/ITECH/Con 1.png"
        },
-    { name: "Carpentes Ash", position: "Councilor", votes: "No votes yet" 
+    { name: "Carpentes Ash", position: "Councilor", votes: "631" 
        ,photo: "/images/Candidates/ITECH/Con 2.jpg"
     },
-  { name: "Clemente Joseph “seph”", position: "Councilor", votes: "No votes yet" 
+  { name: "Clemente Joseph “seph”", position: "Councilor", votes: "668" 
      ,photo: "/images/Candidates/ITECH/Con 3.jpg"
   },
-    { name: "Gepiga Mhelo", position: "Councilor", votes: "No votes yet" 
+    { name: "Gepiga Mhelo", position: "Councilor", votes: "599" 
        ,photo: "/images/Candidates/ITECH/Con 4.jpg"
     },
   
@@ -553,19 +551,19 @@ export const resultsData: {
 
 
     "Open University System": {President: [
-        { name: "Santiago Danielle", position: "President", votes: "No votes yet", photo: "/images/Candidates/OUS/OUS PRES.jpeg", },
+        { name: "Santiago Danielle", position: "President", votes: "1,508", photo: "/images/Candidates/OUS/OUS PRES.jpeg", },
       ],
       VicePresident: [
-        { name: "Sulvita Mark Lawrence", position: "Vice President", votes: "No votes yet", photo: "/images/Candidates/OUS/OUS VP.JPG", },
+        { name: "Sulvita Mark Lawrence", position: "Vice President", votes: "1485t", photo: "/images/Candidates/OUS/OUS VP.JPG", },
       ],
       Councilors: [
-  { name: "Cabildo Ma. Feliz Emilline ", position: "Councilor", votes: "No votes yet",photo: "/images/Candidates/OUS/Con 1.jpeg" },
-  { name: "De Guzman Alaine Jean", position: "Councilor", votes: "No votes yet" ,photo: "/images/Candidates/OUS/Con 2.jpeg" },
-  { name: "Dizon Romalyn", position: "Councilor", votes: "No votes yet" ,photo: "/images/Candidates/OUS/Con 3.jpg" },
-  { name: "Ocon Judy Ann", position: "Councilor", votes: "No votes yet" ,photo: "/images/Candidates/OUS/Con 4.png" },
-  { name: "Pangilinan Yana Odessa", position: "Councilor", votes: "No votes yet" ,photo: "/images/Candidates/OUS/Con 5.jpeg" },
-  { name: "Pascual Khris Chelsea", position: "Councilor", votes: "No votes yet",photo: "/images/Candidates/OUS/Con 6.jpg"  },
-  { name: "Sistua Moshii", position: "Councilor", votes: "No votes yet",photo: "/images/Candidates/OUS/Con 7.jpeg"  },
+  { name: "Cabildo Ma. Feliz Emilline ", position: "Councilor", votes: "1,175",photo: "/images/Candidates/OUS/Con 1.jpeg" },
+  { name: "De Guzman Alaine Jean", position: "Councilor", votes: "1,249" ,photo: "/images/Candidates/OUS/Con 2.jpeg" },
+  { name: "Dizon Romalyn", position: "Councilor", votes: "1,340" ,photo: "/images/Candidates/OUS/Con 3.jpg" },
+  { name: "Ocon Judy Ann", position: "Councilor", votes: "1,202" ,photo: "/images/Candidates/OUS/Con 4.png" },
+  { name: "Pangilinan Yana Odessa", position: "Councilor", votes: "1,210" ,photo: "/images/Candidates/OUS/Con 5.jpeg" },
+  { name: "Pascual Khris Chelsea", position: "Councilor", votes: "1,021",photo: "/images/Candidates/OUS/Con 6.jpg"  },
+  { name: "Sistua Moshii", position: "Councilor", votes: "627",photo: "/images/Candidates/OUS/Con 7.jpeg"  },
 ]},
   },
 };
