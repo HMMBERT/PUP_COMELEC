@@ -447,39 +447,39 @@ export const resultsData: {
 
       
     "College of Social Sciences and Development": {President: [
-      { name: "Ba-ay III Felix ", position: "President", votes: "No votes yet"
+      { name: "Ba-ay III Felix ", position: "President", votes: "525"
         ,photo: "/images/Candidates/CSSD/Pres 1.jpeg"
        },
-        { name: "GUINTO SHARNONN AIRE E.", position: "President", votes: "No votes yet"
+        { name: "GUINTO SHARNONN AIRE E.", position: "President", votes: "316"
           ,photo: "/images/Candidates/CSSD/Pres 2.png"
          },
       ],
       VicePresident: [
-        { name: "SOLON JERSON", position: "Vice President", votes: "No votes yet"
+        { name: "SOLON JERSON", position: "Vice President", votes: "497"
           ,photo: "/images/Candidates/CSSD/VP 1.png"
          },
         
       ],
         Councilors: [
-      { name: "Almazan EMRYS M.", position: "Councilor", votes: "No votes yet" 
+      { name: "Almazan EMRYS M.", position: "Councilor", votes: "340" 
         ,photo: "/images/Candidates/CSSD/Con 1.png"
       },
-    { name: "Batao Chester", position: "Councilor", votes: "No votes yet"
+    { name: "Batao Chester", position: "Councilor", votes: "601"
       ,photo: "/images/Candidates/CSSD/Con 2.png"
      },
-    { name: "Casigay Lovely", position: "Councilor", votes: "No votes yet" 
+    { name: "Casigay Lovely", position: "Councilor", votes: "631" 
        ,photo: "/images/Candidates/CSSD/Con 3.jpg"
     },
-    { name: "Manalao Yachnee Melrene", position: "Councilor", votes: "No votes yet" 
+    { name: "Manalao Yachnee Melrene", position: "Councilor", votes: "619" 
        ,photo: "/images/Candidates/CSSD/Con 4.jpg"
     },
-    { name: "Oco Karen Nicole F.", position: "Councilor", votes: "No votes yet"
+    { name: "Oco Karen Nicole F.", position: "Councilor", votes: "413"
        ,photo: "/images/Candidates/CSSD/Con 5.jpeg"
      },
-    { name: "Redoña Jullia", position: "Councilor", votes: "No votes yet"
+    { name: "Redoña Jullia", position: "Councilor", votes: "354"
       ,photo: "/images/Candidates/CSSD/Con 6.jpg"
      },
-    { name: "Rodriguez Juliana", position: "Councilor", votes: "No votes yet" 
+    { name: "Rodriguez Juliana", position: "Councilor", votes: "592" 
       ,photo: "/images/Candidates/CSSD/Con 7.jpg"
     },
   ] },
